@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.1.v20090903 Build &lt;2.5.1.v20090917-1447></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/reportItems.rptlibrary</property>
+            <property name="namespace">reportItems</property>
+        </structure>
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/reportThemes.rptlibrary</property>
+            <property name="namespace">reportThemes</property>
+        </structure>
+    </list-property>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="mpMainMasterPagePortrait" id="7" extends="reportItems.mpMainMasterPagePortrait">
+            <overridden-values>
+                <ref-entry baseId="138" name="grdReportHeaderPortrait" id="138"/>
+                <ref-entry baseId="139" id="139"/>
+                <ref-entry baseId="140" id="140"/>
+                <ref-entry baseId="141" id="141"/>
+                <ref-entry baseId="142" id="142"/>
+                <ref-entry baseId="143" id="143"/>
+                <ref-entry baseId="144" name="imgClassicModelCar1" id="144"/>
+                <ref-entry baseId="145" id="145"/>
+                <ref-entry baseId="146" name="lblReportHeader1" id="146"/>
+                <ref-entry baseId="147" id="147"/>
+                <ref-entry baseId="149" name="imgClassicModelCar21" id="149"/>
+                <ref-entry baseId="182" name="grdReportFooterPortrait" id="182"/>
+                <ref-entry baseId="183" id="183"/>
+                <ref-entry baseId="184" id="184"/>
+                <ref-entry baseId="185" id="185"/>
+                <ref-entry baseId="186" id="186"/>
+                <ref-entry baseId="188" name="txtFooterDate" id="188"/>
+                <ref-entry baseId="187" id="187"/>
+                <ref-entry baseId="190" name="grdReportFooterPageNo" id="190"/>
+                <ref-entry baseId="191" id="191"/>
+                <ref-entry baseId="192" id="192"/>
+                <ref-entry baseId="193" id="193"/>
+                <ref-entry baseId="194" id="194"/>
+                <ref-entry baseId="195" id="195"/>
+                <ref-entry baseId="196" name="txtPageNumber" id="196"/>
+                <ref-entry baseId="197" id="197"/>
+                <ref-entry baseId="198" name="txtPageOf" id="198"/>
+                <ref-entry baseId="199" id="199"/>
+                <ref-entry baseId="200" name="txtTotalPage" id="200"/>
+            </overridden-values>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid name="grd3x3Blue" id="201" extends="reportItems.grd3x3Blue">
+            <property name="width">6.822916666666667in</property>
+            <overridden-values>
+                <ref-entry baseId="245" id="245">
+                    <property name="width">1.0729166666666667in</property>
+                </ref-entry>
+                <ref-entry baseId="246" id="246">
+                    <property name="width">4.53125in</property>
+                </ref-entry>
+                <ref-entry baseId="247" id="247">
+                    <property name="width">1.21875in</property>
+                </ref-entry>
+                <ref-entry baseId="248" id="248"/>
+                <ref-entry baseId="249" id="249"/>
+                <ref-entry baseId="260" name="lblColumn1" id="260">
+                    <property name="text">Id</property>
+                </ref-entry>
+                <ref-entry baseId="250" id="250"/>
+                <ref-entry baseId="261" name="lblColumn2" id="261">
+                    <property name="text">Customer Name</property>
+                </ref-entry>
+                <ref-entry baseId="251" id="251"/>
+                <ref-entry baseId="262" name="lblColumn3" id="262">
+                    <property name="text">Country</property>
+                </ref-entry>
+                <ref-entry baseId="252" id="252"/>
+                <ref-entry baseId="253" id="253"/>
+                <ref-entry baseId="254" id="254"/>
+                <ref-entry baseId="255" id="255"/>
+                <ref-entry baseId="256" id="256"/>
+                <ref-entry baseId="257" id="257"/>
+                <ref-entry baseId="258" id="258"/>
+                <ref-entry baseId="259" id="259"/>
+            </overridden-values>
+        </grid>
+    </body>
+</report>

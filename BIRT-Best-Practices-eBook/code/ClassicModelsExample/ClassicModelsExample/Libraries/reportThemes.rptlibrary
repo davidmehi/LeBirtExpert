@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.1.v20090903 Build &lt;2.5.1.v20090917-1447></property>
+    <property name="units">in</property>
+    <property name="comments">BIRT Library that contains all of the Themes for the reporting project.</property>
+    <html-property name="description">*****************************************************************&#13;
+**  This Report file is part of the Classic Models example        **&#13;
+**  provided with the eBook:                                                        **&#13;
+**  Le BIRT Expert's Guide to BIRT Best Practices                       **&#13;
+**                                                                                                      **&#13;
+**  Visit http://www.lebirtexpert.com for more information   **&#13;
+**                                                                                                      **&#13;
+*****************************************************************</html-property>
+    <themes>
+        <theme name="mainReportTheme" id="84">
+            <styles>
+                <style name="lblTableHeader10" id="85">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="lblTableHeader12" id="86">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">12pt</property>
+                </style>
+                <style name="lblTableHeader14" id="87">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">14pt</property>
+                </style>
+                <style name="lblTableHeader10Bold" id="88">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="lblTableHeader12Bold" id="89">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">12pt</property>
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="lblTableHeader14Bold" id="90">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">14pt</property>
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="lblTableHeader10BoldItalic" id="91">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                </style>
+                <style name="lblTableHeader12BoldItalic" id="92">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">12pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                </style>
+                <style name="lblTableHeader14BoldItalic" id="93">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">14pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                </style>
+                <style name="lblTableHeader10BoldItalicU" id="94">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textUnderline">underline</property>
+                </style>
+                <style name="lblTableHeader12BoldItalicU" id="95">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">12pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                </style>
+                <style name="lblTableHeader14BoldItalicU" id="96">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">14pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                </style>
+                <style name="tblHeaderRowAutoBGColor" id="97"/>
+                <style name="tblHeaderRowLightBGColor" id="98">
+                    <property name="backgroundColor">#F0F0F0</property>
+                </style>
+                <style name="tblHeaderRowDarkBGColor" id="99">
+                    <property name="backgroundColor">#E1E1E1</property>
+                </style>
+                <style name="lblReportHeader12Bold" id="100">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">12pt</property>
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="lblReportHeader14Bold" id="101">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">14pt</property>
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="lblReportHeader16Bold" id="102">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">16pt</property>
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="tblDetailRowAutoBGColor" id="103"/>
+                <style name="tblDetailRowDarkBGColor" id="104">
+                    <property name="backgroundColor">#E1E1E1</property>
+                </style>
+                <style name="tblDetailRowLightBGColor" id="105">
+                    <property name="backgroundColor">#F5F5F5</property>
+                </style>
+                <style name="lblReportHeader16BoldNavy" id="106">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">16pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#000080</property>
+                </style>
+                <style name="tblHeaderRowDarkBGColorBlue" id="107">
+                    <property name="backgroundColor">#88C4FF</property>
+                </style>
+                <style name="tblDetailRowLightBGColorBlue" id="108">
+                    <property name="backgroundColor">#ECF5FF</property>
+                </style>
+                <style name="crosstab" id="203">
+                    <property name="borderBottomColor">#CCCCCC</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1pt</property>
+                    <property name="borderLeftColor">#CCCCCC</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1pt</property>
+                    <property name="borderRightColor">#CCCCCC</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1pt</property>
+                    <property name="borderTopColor">#CCCCCC</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1pt</property>
+                </style>
+                <style name="crosstab-cell" id="202">
+                    <property name="borderBottomColor">#CCCCCC</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1pt</property>
+                    <property name="borderLeftColor">#CCCCCC</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1pt</property>
+                    <property name="borderRightColor">#CCCCCC</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1pt</property>
+                    <property name="borderTopColor">#CCCCCC</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1pt</property>
+                </style>
+                <style name="report" id="204"/>
+                <style name="lblReportHeader14BoldNavy" id="205">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">14pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#000080</property>
+                </style>
+                <style name="lblReportHeader12BoldNavy" id="206">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">12pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#000080</property>
+                </style>
+                <style name="tblDetailRowLightBGColorGreen" id="207">
+                    <property name="backgroundColor">#CCFFCC</property>
+                </style>
+                <style name="tblHeaderRowDarkBGColorGreen" id="208">
+                    <property name="backgroundColor">#8CFF8C</property>
+                </style>
+                <style name="tblDetailRowLightBGColorRed" id="209">
+                    <property name="backgroundColor">#FFDDDD</property>
+                </style>
+                <style name="tblDetailRowLightBGColorYellow" id="210">
+                    <property name="backgroundColor">#FFFFE8</property>
+                </style>
+                <style name="tblHeaderRowDarkBGColorRed" id="211">
+                    <property name="backgroundColor">#FFA6A6</property>
+                </style>
+                <style name="tblHeaderRowDarkBGColorYellow" id="212">
+                    <property name="backgroundColor">#FFFFB0</property>
+                </style>
+                <style name="dataItem10" id="215">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="dataItem10Bold" id="217">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="dataItem10BoldItalic" id="218">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                </style>
+                <style name="dataItem10BoldItalicU" id="219">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textUnderline">underline</property>
+                </style>
+                <style name="dataItem12Bold" id="220">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">12pt</property>
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="dataItem14Bold" id="221">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">14pt</property>
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="dataItem12BoldItalic" id="222">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">12pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                </style>
+                <style name="dataItem14BoldItalic" id="223">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">14pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                </style>
+                <style name="dataItem12BoldItalicU" id="224">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">12pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textUnderline">underline</property>
+                </style>
+                <style name="dataItem14BoldItalicU" id="225">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">14pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textUnderline">underline</property>
+                </style>
+                <style name="dataItem12" id="226">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">12pt</property>
+                </style>
+                <style name="dataItem14" id="227">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">14pt</property>
+                </style>
+                <style name="grpHeader1RowAutoBGColor" id="228"/>
+                <style name="grpHeader1RowBGColor" id="229">
+                    <property name="backgroundColor">#F3F3F3</property>
+                </style>
+                <style name="grpHeader1RowBGColorBlue" id="230">
+                    <property name="backgroundColor">#CCE6FF</property>
+                </style>
+                <style name="grpHeader1RowBGColorGreen" id="231">
+                    <property name="backgroundColor">#AAFFAA</property>
+                </style>
+                <style name="grpHeader1RowBGColorRed" id="232">
+                    <property name="backgroundColor">#FFC4C4</property>
+                </style>
+                <style name="grpHeader1RowBGColorYellow" id="233">
+                    <property name="backgroundColor">#FFFFCA</property>
+                </style>
+                <style name="lblTableHeader10Italic" id="234">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                </style>
+                <style name="dataItem10DateMonth" id="235">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="dateTimeFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">MMMM</property>
+                    </structure>
+                </style>
+                <style name="dataItem10Date" id="236">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">normal</property>
+                    <structure name="dateTimeFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">MM/dd/yyyy</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="dataItem10DateMonthItalic" id="237">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <structure name="dateTimeFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">MMMM</property>
+                    </structure>
+                </style>
+            </styles>
+        </theme>
+        <theme name="predefinedReportThemeOrange" id="238">
+            <styles>
+                <style name="table-header" id="239">
+                    <property name="backgroundColor">#974806</property>
+                    <property name="fontFamily">"Auti"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FDEADA</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-detail" id="240">
+                    <property name="backgroundColor">#FDEADA</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-1" id="241">
+                    <property name="backgroundColor">#E36C09</property>
+                    <property name="fontFamily">"auto"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FDEADA</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-1" id="242">
+                    <property name="backgroundColor">#E36C09</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#FDEADA</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-footer" id="243">
+                    <property name="backgroundColor">#974806</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#FDEADA</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-header-2" id="244">
+                    <property name="backgroundColor">#FAC08F</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">normal</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-2" id="245">
+                    <property name="backgroundColor">#FAC08F</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="report" id="246">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-3" id="247">
+                    <property name="backgroundColor">#FBD5B5</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-3" id="248">
+                    <property name="backgroundColor">#FBD5B5</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table" id="249">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="predefinedReportThemeGreen" id="250">
+            <styles>
+                <style name="table-header" id="251">
+                    <property name="backgroundColor">#4F6128</property>
+                    <property name="fontFamily">"Auti"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#EBF1DD</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-detail" id="252">
+                    <property name="backgroundColor">#EBF1DD</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-1" id="253">
+                    <property name="backgroundColor">#76923C</property>
+                    <property name="fontFamily">"auto"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#EBF1DD</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-1" id="254">
+                    <property name="backgroundColor">#76923C</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#EBF1DD</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-footer" id="255">
+                    <property name="backgroundColor">#4F6128</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#EBF1DD</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-header-2" id="256">
+                    <property name="backgroundColor">#C3D69B</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">normal</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-2" id="257">
+                    <property name="backgroundColor">#C3D69B</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="report" id="258">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-3" id="259">
+                    <property name="backgroundColor">#D7E3BC</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-3" id="260">
+                    <property name="backgroundColor">#D7E3BC</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table" id="261">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="predefinedReportThemePurple" id="262">
+            <styles>
+                <style name="table-header" id="263">
+                    <property name="backgroundColor">#3F3151</property>
+                    <property name="fontFamily">"Auti"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#E5E0EC</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-detail" id="264">
+                    <property name="backgroundColor">#E5E0EC</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-1" id="265">
+                    <property name="backgroundColor">#5F497A</property>
+                    <property name="fontFamily">"auto"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#E5E0EC</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-1" id="266">
+                    <property name="backgroundColor">#5F497A</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#E5E0EC</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-footer" id="267">
+                    <property name="backgroundColor">#3F3151</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#E5E0EC</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-header-2" id="268">
+                    <property name="backgroundColor">#B2A2D9</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">normal</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-2" id="269">
+                    <property name="backgroundColor">#B2A2C7</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="report" id="270">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-3" id="271">
+                    <property name="backgroundColor">#CCC1D9</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-3" id="272">
+                    <property name="backgroundColor">#CCC1D9</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table" id="273">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="predefinedReportThemeRed" id="274">
+            <styles>
+                <style name="table-header" id="275">
+                    <property name="backgroundColor">#632423</property>
+                    <property name="fontFamily">"Auti"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#F2DCDB</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-detail" id="276">
+                    <property name="backgroundColor">#F2DCDB</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-1" id="277">
+                    <property name="backgroundColor">#953734</property>
+                    <property name="fontFamily">"auto"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#F2DCDB</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-1" id="278">
+                    <property name="backgroundColor">#953734</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#F2DCDB</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-footer" id="279">
+                    <property name="backgroundColor">#632423</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#F2DCDB</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-header-2" id="280">
+                    <property name="backgroundColor">#D99694</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">normal</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-2" id="281">
+                    <property name="backgroundColor">#D99694</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="report" id="282">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-3" id="283">
+                    <property name="backgroundColor">#E5B9B7</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-3" id="284">
+                    <property name="backgroundColor">#E5B9B7</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table" id="285">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="predefinedReportThemeTeal" id="286">
+            <styles>
+                <style name="table-header" id="287">
+                    <property name="backgroundColor">#205867</property>
+                    <property name="fontFamily">"Auti"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#DBEEF3</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-detail" id="288">
+                    <property name="backgroundColor">#DBEEF3</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-1" id="289">
+                    <property name="backgroundColor">#31859B</property>
+                    <property name="fontFamily">"auto"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#DBEEF3</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-1" id="290">
+                    <property name="backgroundColor">#31859B</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#DBEEF3</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-footer" id="291">
+                    <property name="backgroundColor">#205867</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#DBEEF3</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-header-2" id="292">
+                    <property name="backgroundColor">#92CDDC</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">normal</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-2" id="293">
+                    <property name="backgroundColor">#92CDDC</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="report" id="294">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-3" id="295">
+                    <property name="backgroundColor">#B7DDE8</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-3" id="296">
+                    <property name="backgroundColor">#B7DDE8</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table" id="297">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="predefinedReportThemeCopper" id="298">
+            <styles>
+                <style name="table-header" id="299">
+                    <property name="backgroundColor">#1D1B10</property>
+                    <property name="fontFamily">"Auti"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#DDD9C3</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-detail" id="300">
+                    <property name="backgroundColor">#DDD9C3</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-1" id="301">
+                    <property name="backgroundColor">#494429</property>
+                    <property name="fontFamily">"auto"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#DDD9C3</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-1" id="302">
+                    <property name="backgroundColor">#494429</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#DDD9C3</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-footer" id="303">
+                    <property name="backgroundColor">#1D1B10</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#DDD9C3</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-header-2" id="304">
+                    <property name="backgroundColor">#938953</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">normal</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-2" id="305">
+                    <property name="backgroundColor">#938953</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="report" id="306">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-3" id="307">
+                    <property name="backgroundColor">#C4BD97</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-3" id="308">
+                    <property name="backgroundColor">#C4BD97</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table" id="309">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="predefinedReportThemeDarkBlue" id="310">
+            <styles>
+                <style name="table-header" id="311">
+                    <property name="backgroundColor">#0F243E</property>
+                    <property name="fontFamily">"Auti"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#C6D9F0</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-detail" id="312">
+                    <property name="backgroundColor">#C6D9F0</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-1" id="313">
+                    <property name="backgroundColor">#17365D</property>
+                    <property name="fontFamily">"auto"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#C6D9F0</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-1" id="314">
+                    <property name="backgroundColor">#17365D</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#C6D9F0</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-footer" id="315">
+                    <property name="backgroundColor">#0F243E</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#C6D9F0</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-header-2" id="316">
+                    <property name="backgroundColor">#548DD4</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">normal</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-2" id="317">
+                    <property name="backgroundColor">#548DD4</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="report" id="318">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-3" id="319">
+                    <property name="backgroundColor">#8DB3E2</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-3" id="320">
+                    <property name="backgroundColor">#8DB3E2</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table" id="321">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="predefinedReportThemeMediumBlue" id="322">
+            <styles>
+                <style name="table-header" id="323">
+                    <property name="backgroundColor">#244061</property>
+                    <property name="fontFamily">"Auti"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#DBE5F1</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-detail" id="324">
+                    <property name="backgroundColor">#DBE5F1</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-1" id="325">
+                    <property name="backgroundColor">#366092</property>
+                    <property name="fontFamily">"auto"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#DBE5F1</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-1" id="326">
+                    <property name="backgroundColor">#366092</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#DBE5F1</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-footer" id="327">
+                    <property name="backgroundColor">#244061</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#DBE5F1</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-header-2" id="328">
+                    <property name="backgroundColor">#95B3D7</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">normal</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-2" id="329">
+                    <property name="backgroundColor">#95B3D7</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="report" id="330">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-3" id="331">
+                    <property name="backgroundColor">#B8CCE4</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-3" id="332">
+                    <property name="backgroundColor">#B8CCE4</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table" id="333">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="predefinedReportThemeGray" id="334">
+            <styles>
+                <style name="table-header" id="335">
+                    <property name="backgroundColor">#595959</property>
+                    <property name="fontFamily">"Auti"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#F2F2F2</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-detail" id="336">
+                    <property name="backgroundColor">#F2F2F2</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-1" id="337">
+                    <property name="backgroundColor">#A5A5A5</property>
+                    <property name="fontFamily">"auto"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#F2F2F2</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-1" id="338">
+                    <property name="backgroundColor">#A5A5A5</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#F2F2F2</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-footer" id="339">
+                    <property name="backgroundColor">#595959</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="color">#F2F2F2</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-header-2" id="340">
+                    <property name="backgroundColor">#BFBFBF</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">normal</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-2" id="341">
+                    <property name="backgroundColor">#BFBFBF</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="report" id="342">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table-group-header-3" id="343">
+                    <property name="backgroundColor">#D8D8D8</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table-group-footer-3" id="344">
+                    <property name="backgroundColor">#D8D8D8</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">#,###.0</property>
+                    </structure>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">middle</property>
+                </style>
+                <style name="table" id="345">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="customBGColorsReportTheme" id="346">
+            <styles>
+                <style name="bgOrange1" id="347">
+                    <property name="backgroundColor">#FDEADA</property>
+                </style>
+                <style name="bgOrange2" id="348">
+                    <property name="backgroundColor">#FBD5B5</property>
+                </style>
+                <style name="bgOrange3" id="349">
+                    <property name="backgroundColor">#FAC08F</property>
+                </style>
+                <style name="bgOrange4" id="350">
+                    <property name="backgroundColor">#E36C09</property>
+                    <property name="color">#FDEADA</property>
+                </style>
+                <style name="bgOrange5" id="351">
+                    <property name="backgroundColor">#974806</property>
+                    <property name="color">#FDEADA</property>
+                </style>
+                <style name="bgGreen1" id="352">
+                    <property name="backgroundColor">#EBF1DD</property>
+                </style>
+                <style name="bgGreen2" id="353">
+                    <property name="backgroundColor">#D7E3BC</property>
+                </style>
+                <style name="bgGreen3" id="354">
+                    <property name="backgroundColor">#C3D69B</property>
+                </style>
+                <style name="bgGreen4" id="355">
+                    <property name="backgroundColor">#76923C</property>
+                    <property name="color">#EBF1DD</property>
+                </style>
+                <style name="bgGreen5" id="356">
+                    <property name="backgroundColor">#4F6128</property>
+                    <property name="color">#EBF1DD</property>
+                </style>
+                <style name="bgPurple1" id="357">
+                    <property name="backgroundColor">#E5E0EC</property>
+                </style>
+                <style name="bgPurple2" id="358">
+                    <property name="backgroundColor">#CCC1D9</property>
+                </style>
+                <style name="bgPurple3" id="359">
+                    <property name="backgroundColor">#B2A2C7</property>
+                </style>
+                <style name="bgPurple4" id="360">
+                    <property name="backgroundColor">#5F497A</property>
+                    <property name="color">#E5E0EC</property>
+                </style>
+                <style name="bgPurple5" id="361">
+                    <property name="backgroundColor">#3F3151</property>
+                    <property name="color">#E5E0EC</property>
+                </style>
+                <style name="bgRed1" id="362">
+                    <property name="backgroundColor">#F2DCDB</property>
+                </style>
+                <style name="bgRed2" id="363">
+                    <property name="backgroundColor">#E5B9B7</property>
+                </style>
+                <style name="bgRed3" id="364">
+                    <property name="backgroundColor">#D99694</property>
+                </style>
+                <style name="bgRed4" id="365">
+                    <property name="backgroundColor">#953734</property>
+                    <property name="color">#F2DCDB</property>
+                </style>
+                <style name="bgRed5" id="366">
+                    <property name="backgroundColor">#632423</property>
+                    <property name="color">#F2DCDB</property>
+                </style>
+                <style name="bgTeal1" id="367">
+                    <property name="backgroundColor">#DBEEF3</property>
+                </style>
+                <style name="bgTeal2" id="368">
+                    <property name="backgroundColor">#B7DDE8</property>
+                </style>
+                <style name="bgTeal3" id="369">
+                    <property name="backgroundColor">#92CDDC</property>
+                </style>
+                <style name="bgTeal4" id="370">
+                    <property name="backgroundColor">#31859B</property>
+                    <property name="color">#DBEEF3</property>
+                </style>
+                <style name="bgTeal5" id="371">
+                    <property name="backgroundColor">#205867</property>
+                    <property name="color">#DBEEF3</property>
+                </style>
+                <style name="bgCopper1" id="372">
+                    <property name="backgroundColor">#DDD9C3</property>
+                </style>
+                <style name="bgCopper2" id="373">
+                    <property name="backgroundColor">#C4BD97</property>
+                </style>
+                <style name="bgCopper3" id="374">
+                    <property name="backgroundColor">#938953</property>
+                </style>
+                <style name="bgCopper4" id="375">
+                    <property name="backgroundColor">#494429</property>
+                    <property name="color">#DDD9C3</property>
+                </style>
+                <style name="bgCopper5" id="376">
+                    <property name="backgroundColor">#1D1B10</property>
+                    <property name="color">#DDD9C3</property>
+                </style>
+                <style name="bgDarkBlue1" id="377">
+                    <property name="backgroundColor">#C6D9F0</property>
+                </style>
+                <style name="bgDarkBlue2" id="378">
+                    <property name="backgroundColor">#8DB3E2</property>
+                </style>
+                <style name="bgDarkBlue3" id="379">
+                    <property name="backgroundColor">#548DD4</property>
+                </style>
+                <style name="bgDarkBlue4" id="380">
+                    <property name="backgroundColor">#17365D</property>
+                    <property name="color">#C6D9F0</property>
+                </style>
+                <style name="bgDarkBlue5" id="381">
+                    <property name="backgroundColor">#0F243E</property>
+                    <property name="color">#C6D9F0</property>
+                </style>
+                <style name="bgMediumBlue1" id="382">
+                    <property name="backgroundColor">#DBE5F1</property>
+                </style>
+                <style name="bgMediumBlue2" id="383">
+                    <property name="backgroundColor">#B8CCE4</property>
+                </style>
+                <style name="bgMediumBlue3" id="384">
+                    <property name="backgroundColor">#95B3D7</property>
+                </style>
+                <style name="bgMediumBlue4" id="385">
+                    <property name="backgroundColor">#366092</property>
+                    <property name="color">#DBE5F1</property>
+                </style>
+                <style name="bgMediumBlue5" id="386">
+                    <property name="backgroundColor">#244061</property>
+                    <property name="color">#DBE5F1</property>
+                </style>
+                <style name="bgGray1" id="387">
+                    <property name="backgroundColor">#F0F0F0</property>
+                </style>
+                <style name="bgGray2" id="388">
+                    <property name="backgroundColor">#D2D2D2</property>
+                </style>
+                <style name="bgGray3" id="389">
+                    <property name="backgroundColor">#B9B9B9</property>
+                </style>
+                <style name="bgGray4" id="390">
+                    <property name="backgroundColor">#969696</property>
+                    <property name="color">#F0F0F0</property>
+                </style>
+                <style name="bgGray5" id="391">
+                    <property name="backgroundColor">#646464</property>
+                    <property name="color">#F0F0F0</property>
+                </style>
+            </styles>
+        </theme>
+    </themes>
+    <page-setup>
+        <simple-master-page name="NewSimpleMasterPage" id="3"/>
+    </page-setup>
+</library>

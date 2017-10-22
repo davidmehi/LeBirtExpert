@@ -1,0 +1,14 @@
+# This file is used for all external messages
+# German
+
+ordersByMonth.report.title=Auftrag Monatliche Zusammenfassung für das Jahr
+ordersByMonth.chart.title=Auftrag von Graf Monat
+ordersByMonth.tableHeader.col1=Monat
+ordersByMonth.tableHeader.col2=Bestell-Nummer
+ordersByMonth.tableHeader.col3=Erforderlich Datum
+ordersByMonth.tableHeader.col4=Shipped Date
+ordersByMonth.tableHeader.col5=Status
+ordersByMonth.tableHeader.col6=Customer Name
+ordersByMonth.tableHeader.col7=Stadt
+ordersByMonth.tableHeader.col8=Land
+ordersByMonth.tableHeader.col9=Kommentare

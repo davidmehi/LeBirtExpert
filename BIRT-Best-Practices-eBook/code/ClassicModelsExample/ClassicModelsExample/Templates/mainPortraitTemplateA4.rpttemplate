@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.1.v20090903 Build &lt;2.5.1.v20090917-1447></property>
+    <property name="units">in</property>
+    <property name="comments">Main Portrait Template for A4</property>
+    <html-property name="description">*****************************************************************&#13;
+**  This Report file is part of the Classic Models example        **&#13;
+**  provided with the eBook:                                                        **&#13;
+**  Le BIRT Expert's Guide to BIRT Best Practices                       **&#13;
+**                                                                                                      **&#13;
+**  Visit http://www.lebirtexpert.com for more information   **&#13;
+**                                                                                                      **&#13;
+*****************************************************************</html-property>
+    <method name="initialize"><![CDATA[
+// Set Start time of Report
+setStartTime();]]></method>
+    <method name="afterFactory"><![CDATA[
+// Set End Time
+setEndTime();]]></method>
+    <property name="theme">reportThemes.mainReportTheme</property>
+    <text-property name="displayName">Main Portrait Template</text-property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/dataItems.rptlibrary</property>
+            <property name="namespace">dataItems</property>
+        </structure>
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/reportItems.rptlibrary</property>
+            <property name="namespace">reportItems</property>
+        </structure>
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/reportThemes.rptlibrary</property>
+            <property name="namespace">reportThemes</property>
+        </structure>
+    </list-property>
+    <list-property name="includeScripts">
+        <property>ClassicModelsExample/Scripts/common.js</property>
+        <property>ClassicModelsExample/Scripts/logger.js</property>
+    </list-property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="dbClassicModels" id="7"
+ extends="dataItems.dbClassicModels"/>
+    </data-sources>
+    <page-setup>
+        <simple-master-page name="mpMainMasterPagePortraitA4" id="270" extends="reportItems.mpMainMasterPagePortraitA4">
+            <overridden-values>
+                <ref-entry baseId="305" name="grdReportHeaderPortrait1" id="305"/>
+                <ref-entry baseId="306" id="306"/>
+                <ref-entry baseId="307" id="307"/>
+                <ref-entry baseId="308" id="308"/>
+                <ref-entry baseId="309" id="309"/>
+                <ref-entry baseId="310" id="310"/>
+                <ref-entry baseId="311" name="imgClassicModelCar11" id="311"/>
+                <ref-entry baseId="312" id="312"/>
+                <ref-entry baseId="313" name="lblReportHeader11" id="313"/>
+                <ref-entry baseId="314" name="NewLabel11" id="314"/>
+                <ref-entry baseId="315" id="315"/>
+                <ref-entry baseId="316" name="imgClassicModelCar211" id="316"/>
+                <ref-entry baseId="287" name="grdReportFooterPortrait1" id="287"/>
+                <ref-entry baseId="288" id="288"/>
+                <ref-entry baseId="289" id="289"/>
+                <ref-entry baseId="290" id="290"/>
+                <ref-entry baseId="291" id="291"/>
+                <ref-entry baseId="292" name="txtFooterDate2" id="292"/>
+                <ref-entry baseId="293" id="293"/>
+                <ref-entry baseId="294" name="grdReportFooterPageNo2" id="294"/>
+                <ref-entry baseId="295" id="295"/>
+                <ref-entry baseId="296" id="296"/>
+                <ref-entry baseId="297" id="297"/>
+                <ref-entry baseId="298" id="298"/>
+                <ref-entry baseId="299" id="299"/>
+                <ref-entry baseId="300" name="txtPageNumber2" id="300"/>
+                <ref-entry baseId="301" id="301"/>
+                <ref-entry baseId="302" name="txtPageOf2" id="302"/>
+                <ref-entry baseId="303" id="303"/>
+                <ref-entry baseId="304" name="txtTotalPage2" id="304"/>
+            </overridden-values>
+        </simple-master-page>
+    </page-setup>
+</report>

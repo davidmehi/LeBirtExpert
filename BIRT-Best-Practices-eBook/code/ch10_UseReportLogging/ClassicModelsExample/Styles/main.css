@@ -1,0 +1,21 @@
+
+.lblReportHeader16Bold {
+	font-size:16pt;
+	font-weight: bold; 
+	color: Black
+}
+
+.lblReportHeader16BoldNavy {
+	font-size:16pt;
+	font-weight: bold; 
+	color: Navy
+}
+
+.tblHeaderRowBGColorDarkBlue {
+	background-color: rgb(136,196,255);
+}
+
+.tblDetailRowBGColorLightBlue {
+	background-color: rgb(210,233,255);
+}
+

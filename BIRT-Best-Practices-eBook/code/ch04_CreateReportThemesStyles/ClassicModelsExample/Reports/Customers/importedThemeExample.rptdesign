@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.1.v20090903 Build &lt;2.5.1.v20090917-1447></property>
+    <property name="units">in</property>
+    <property name="theme">reportThemes.importedCSSMainTheme</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/reportThemes.rptlibrary</property>
+            <property name="namespace">reportThemes</property>
+        </structure>
+    </list-property>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="7">
+            <property name="style">lblReportHeader16BoldNavy</property>
+            <text-property name="text">Imported Theme Example Report</text-property>
+        </label>
+        <table id="8">
+            <column id="18"/>
+            <column id="19"/>
+            <header>
+                <row id="9">
+                    <property name="style">tblHeaderRowBGColorDarkBlue</property>
+                    <cell id="10"/>
+                    <cell id="11"/>
+                </row>
+            </header>
+            <detail>
+                <row id="12">
+                    <property name="style">tblDetailRowBGColorLightBlue</property>
+                    <cell id="13"/>
+                    <cell id="14"/>
+                </row>
+            </detail>
+            <footer>
+                <row id="15">
+                    <property name="style">tblDetailRowBGColorLightBlue</property>
+                    <cell id="16"/>
+                    <cell id="17"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

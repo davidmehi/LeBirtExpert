@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.1.v20090903 Build &lt;2.5.1.v20090917-1447></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="dbCustomerWebSiteFlatFileData" id="8">
+            <property name="HOME">C:\LeBirtExpert\BIRT-Best-Practices\flatFiles</property>
+            <property name="DELIMTYPE">COMMA</property>
+            <property name="CHARSET">UTF-8</property>
+            <property name="INCLCOLUMNNAME">YES</property>
+            <property name="INCLTYPELINE">YES</property>
+        </oda-data-source>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="dbClassicModels" id="7">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">com.mysql.jdbc.Driver</property>
+            <property name="odaURL">jdbc:mysql://localhost/ClassicModels</property>
+            <property name="odaUser">root</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">cGFzc3cwcmQ=</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="dsCustomerWebSiteFlatFileData" id="9">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">CustomerNumber</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">NumberOfYears</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">VisitsPerMonth</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">dbCustomerWebSiteFlatFileData</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">CustomerNumber</property>
+                    <property name="nativeName">CustomerNumber</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">NumberOfYears</property>
+                    <property name="nativeName">NumberOfYears</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">VisitsPerMonth</property>
+                    <property name="nativeName">VisitsPerMonth</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select "CustomerNumber", "NumberOfYears", "VisitsPerMonth" from customerFlatData.csv : {"CustomerNumber","CustomerNumber",INT;"NumberOfYears","NumberOfYears",INT;"VisitsPerMonth","VisitsPerMonth",INT}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>CustomerNumber</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CustomerNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>NumberOfYears</design:name>
+            <design:position>2</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NumberOfYears</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>VisitsPerMonth</design:name>
+            <design:position>3</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>VisitsPerMonth</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsCustomerData" id="10">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">customerNumber</property>
+                    <text-property name="displayName">customerNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">customerName</property>
+                    <text-property name="displayName">customerName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contactLastName</property>
+                    <text-property name="displayName">contactLastName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contactFirstName</property>
+                    <text-property name="displayName">contactFirstName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">city</property>
+                    <text-property name="displayName">city</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">country</property>
+                    <text-property name="displayName">country</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">creditLimit</property>
+                    <text-property name="displayName">creditLimit</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">customerNumber</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">customerName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">contactLastName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">contactFirstName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">country</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">creditLimit</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">dbClassicModels</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">customerNumber</property>
+                    <property name="nativeName">customerNumber</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">customerName</property>
+                    <property name="nativeName">customerName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">contactLastName</property>
+                    <property name="nativeName">contactLastName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">contactFirstName</property>
+                    <property name="nativeName">contactFirstName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">city</property>
+                    <property name="nativeName">city</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">country</property>
+                    <property name="nativeName">country</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">creditLimit</property>
+                    <property name="nativeName">creditLimit</property>
+                    <property name="dataType">float</property>
+                    <property name="nativeDataType">8</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select customers.customerNumber,customers.customerName,customers.contactLastName,customers.contactFirstName,customers.city,customers.country,customers.creditLimit
+from customers]]></xml-property>
+        </oda-data-set>
+        <joint-data-set name="dsJointCustomerData" id="11">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">dsCustomerWebSiteFlatFileData::VisitsPerMonth</property>
+                    <property name="alias">VisitsPerMonth</property>
+                    <text-property name="displayName">dsCustomerWebSiteFlatFileData::VisitsPerMonth</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dsCustomerData::customerName</property>
+                    <property name="alias">customerName</property>
+                    <text-property name="displayName">dsCustomerData::customerName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dsCustomerWebSiteFlatFileData::NumberOfYears</property>
+                    <property name="alias">NumberOfYears</property>
+                    <text-property name="displayName">dsCustomerWebSiteFlatFileData::NumberOfYears</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dsCustomerWebSiteFlatFileData::CustomerNumber</property>
+                    <property name="alias">CustomerNumber</property>
+                    <text-property name="displayName">dsCustomerWebSiteFlatFileData::CustomerNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dsCustomerData::contactLastName</property>
+                    <property name="alias">contactLastName</property>
+                    <text-property name="displayName">dsCustomerData::contactLastName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dsCustomerData::contactFirstName</property>
+                    <property name="alias">contactFirstName</property>
+                    <text-property name="displayName">dsCustomerData::contactFirstName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dsCustomerData::customerNumber</property>
+                    <property name="alias">customerNumber</property>
+                    <text-property name="displayName">dsCustomerData::customerNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dsCustomerData::creditLimit</property>
+                    <property name="alias">creditLimit</property>
+                    <text-property name="displayName">dsCustomerData::creditLimit</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dsCustomerData::country</property>
+                    <property name="alias">country</property>
+                    <text-property name="displayName">dsCustomerData::country</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dsCustomerData::city</property>
+                    <property name="alias">city</property>
+                    <text-property name="displayName">dsCustomerData::city</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">customerNumber</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">customerName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">contactLastName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">contactFirstName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">country</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">creditLimit</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">CustomerNumber</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">NumberOfYears</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">VisitsPerMonth</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <simple-property-list name="dataSets">
+                <value>dsCustomerData</value>
+                <value>dsCustomerWebSiteFlatFileData</value>
+            </simple-property-list>
+            <list-property name="joinConditions">
+                <structure>
+                    <property name="joinType">inner</property>
+                    <property name="joinOperator">eq</property>
+                    <property name="leftDataSet">dsCustomerData</property>
+                    <property name="rightDataSet">dsCustomerWebSiteFlatFileData</property>
+                    <expression name="leftExpression">dataSetRow["customerNumber"]</expression>
+                    <expression name="rightExpression">dataSetRow["CustomerNumber"]</expression>
+                </structure>
+            </list-property>
+        </joint-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="12">
+            <property name="dataSet">dsJointCustomerData</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">customerNumber</property>
+                    <text-property name="displayName">dsCustomerData::customerNumber</text-property>
+                    <expression name="expression">dataSetRow["customerNumber"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">customerName</property>
+                    <text-property name="displayName">dsCustomerData::customerName</text-property>
+                    <expression name="expression">dataSetRow["customerName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contactLastName</property>
+                    <text-property name="displayName">dsCustomerData::contactLastName</text-property>
+                    <expression name="expression">dataSetRow["contactLastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contactFirstName</property>
+                    <text-property name="displayName">dsCustomerData::contactFirstName</text-property>
+                    <expression name="expression">dataSetRow["contactFirstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">city</property>
+                    <text-property name="displayName">dsCustomerData::city</text-property>
+                    <expression name="expression">dataSetRow["city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">country</property>
+                    <text-property name="displayName">dsCustomerData::country</text-property>
+                    <expression name="expression">dataSetRow["country"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">creditLimit</property>
+                    <text-property name="displayName">dsCustomerData::creditLimit</text-property>
+                    <expression name="expression">dataSetRow["creditLimit"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CustomerNumber</property>
+                    <text-property name="displayName">dsCustomerWebSiteFlatFileData::CustomerNumber</text-property>
+                    <expression name="expression">dataSetRow["CustomerNumber"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">NumberOfYears</property>
+                    <text-property name="displayName">dsCustomerWebSiteFlatFileData::NumberOfYears</text-property>
+                    <expression name="expression">dataSetRow["NumberOfYears"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">VisitsPerMonth</property>
+                    <text-property name="displayName">dsCustomerWebSiteFlatFileData::VisitsPerMonth</text-property>
+                    <expression name="expression">dataSetRow["VisitsPerMonth"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+            </list-property>
+            <column id="66"/>
+            <column id="67"/>
+            <column id="68"/>
+            <column id="69"/>
+            <column id="70"/>
+            <column id="71"/>
+            <column id="72"/>
+            <column id="74"/>
+            <column id="75"/>
+            <header>
+                <row id="13">
+                    <cell id="14">
+                        <label id="15">
+                            <text-property name="text">Customer Number</text-property>
+                        </label>
+                    </cell>
+                    <cell id="16">
+                        <label id="17">
+                            <text-property name="text">Customer Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="18">
+                        <label id="19">
+                            <text-property name="text">Contact Last Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="20">
+                        <label id="21">
+                            <text-property name="text">Contact First Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="22">
+                        <label id="23">
+                            <text-property name="text">City</text-property>
+                        </label>
+                    </cell>
+                    <cell id="24">
+                        <label id="25">
+                            <text-property name="text">Country</text-property>
+                        </label>
+                    </cell>
+                    <cell id="26">
+                        <label id="27">
+                            <text-property name="text">Credit Limit</text-property>
+                        </label>
+                    </cell>
+                    <cell id="30">
+                        <label id="31">
+                            <text-property name="text">Number Of Years</text-property>
+                        </label>
+                    </cell>
+                    <cell id="32">
+                        <label id="33">
+                            <text-property name="text">Visits Per Month</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="34">
+                    <cell id="35">
+                        <data id="36">
+                            <property name="resultSetColumn">customerNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="37">
+                        <data id="38">
+                            <property name="resultSetColumn">customerName</property>
+                        </data>
+                    </cell>
+                    <cell id="39">
+                        <data id="40">
+                            <property name="resultSetColumn">contactLastName</property>
+                        </data>
+                    </cell>
+                    <cell id="41">
+                        <data id="42">
+                            <property name="resultSetColumn">contactFirstName</property>
+                        </data>
+                    </cell>
+                    <cell id="43">
+                        <data id="44">
+                            <property name="resultSetColumn">city</property>
+                        </data>
+                    </cell>
+                    <cell id="45">
+                        <data id="46">
+                            <property name="resultSetColumn">country</property>
+                        </data>
+                    </cell>
+                    <cell id="47">
+                        <data id="48">
+                            <property name="resultSetColumn">creditLimit</property>
+                        </data>
+                    </cell>
+                    <cell id="51">
+                        <data id="52">
+                            <property name="resultSetColumn">NumberOfYears</property>
+                        </data>
+                    </cell>
+                    <cell id="53">
+                        <data id="54">
+                            <property name="resultSetColumn">VisitsPerMonth</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="55">
+                    <cell id="56"/>
+                    <cell id="57"/>
+                    <cell id="58"/>
+                    <cell id="59"/>
+                    <cell id="60"/>
+                    <cell id="61"/>
+                    <cell id="62"/>
+                    <cell id="64"/>
+                    <cell id="65"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

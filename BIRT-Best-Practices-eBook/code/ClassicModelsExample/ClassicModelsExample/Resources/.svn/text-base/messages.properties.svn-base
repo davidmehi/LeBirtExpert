@@ -1,0 +1,14 @@
+# This file is used for all external messages
+# Other versions of this file contain localized versions of the messages
+
+ordersByMonth.report.title=Order Summary by Month for Year
+ordersByMonth.chart.title=Order Count by Month
+ordersByMonth.tableHeader.col1=Month
+ordersByMonth.tableHeader.col2=Order Number
+ordersByMonth.tableHeader.col3=Required Date
+ordersByMonth.tableHeader.col4=Shipped Date
+ordersByMonth.tableHeader.col5=Status
+ordersByMonth.tableHeader.col6=Customer Name
+ordersByMonth.tableHeader.col7=City
+ordersByMonth.tableHeader.col8=Country
+ordersByMonth.tableHeader.col9=Comments

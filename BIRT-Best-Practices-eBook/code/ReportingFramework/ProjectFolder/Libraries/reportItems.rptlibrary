@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.1.v20090903 Build &lt;2.5.1.v20090917-1447></property>
+    <property name="units">in</property>
+    <property name="theme">reportThemes.mainReportTheme</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">../Libraries/reportThemes.rptlibrary</property>
+            <property name="namespace">reportThemes</property>
+        </structure>
+    </list-property>
+    <page-setup>
+        <simple-master-page name="mpMasterPagePortrait" id="266">
+            <property name="orientation">portrait</property>
+        </simple-master-page>
+        <simple-master-page name="mpMasterPageLandscape" id="267">
+            <property name="orientation">landscape</property>
+        </simple-master-page>
+    </page-setup>
+</library>

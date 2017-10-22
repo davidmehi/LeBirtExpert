@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__pCountryName_263_0</property>
+            <property name="value">USA</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__pCreditLimit_265_1</property>
+            <property name="value">9000</property>
+        </structure>
+        <structure>
+            <property name="name">pCountryName_263_2</property>
+            <property name="value">USA</property>
+        </structure>
+        <structure>
+            <property name="name">pCountryName_263_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">pCreditLimit_265_3</property>
+            <property name="value">9000</property>
+        </structure>
+        <structure>
+            <property name="name">pCreditLimit_265_type_</property>
+            <property name="value">integer</property>
+        </structure>
+    </list-property>
+</report>

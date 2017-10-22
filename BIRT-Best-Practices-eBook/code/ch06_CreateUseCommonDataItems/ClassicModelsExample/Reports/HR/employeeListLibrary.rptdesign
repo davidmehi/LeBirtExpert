@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.1.v20090903 Build &lt;2.5.1.v20090917-1447></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/dataItems.rptlibrary</property>
+            <property name="namespace">dataItems</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="dbClassicModels" id="7"
+ extends="dataItems.dbClassicModels"/>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsEmployeeList" id="9"
+ extends="dataItems.dsEmployeeList"/>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsEmployeeJobTitleList" id="50">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">jobTitle</property>
+                    <text-property name="displayName">jobTitle</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">jobTitle</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">dbClassicModels</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">jobTitle</property>
+                    <property name="nativeName">jobTitle</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select distinct employees.jobTitle
+from employees
+order by jobTitle]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>jobTitle</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>jobTitle</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>jobTitle</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>
+]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="10">
+            <property name="dataSet">dsEmployeeList</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">employeeNumber</property>
+                    <text-property name="displayName">employeeNumber</text-property>
+                    <expression name="expression">dataSetRow["employeeNumber"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">lastName</property>
+                    <text-property name="displayName">lastName</text-property>
+                    <expression name="expression">dataSetRow["lastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">firstName</property>
+                    <text-property name="displayName">firstName</text-property>
+                    <expression name="expression">dataSetRow["firstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">officeCode</property>
+                    <text-property name="displayName">officeCode</text-property>
+                    <expression name="expression">dataSetRow["officeCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">reportsTo</property>
+                    <text-property name="displayName">reportsTo</text-property>
+                    <expression name="expression">dataSetRow["reportsTo"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">jobTitle</property>
+                    <text-property name="displayName">jobTitle</text-property>
+                    <expression name="expression">dataSetRow["jobTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="44"/>
+            <column id="45"/>
+            <column id="46"/>
+            <column id="47"/>
+            <column id="48"/>
+            <column id="49"/>
+            <header>
+                <row id="11">
+                    <cell id="12">
+                        <label id="13">
+                            <text-property name="text">Employee Number</text-property>
+                        </label>
+                    </cell>
+                    <cell id="14">
+                        <label id="15">
+                            <text-property name="text">Last Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="16">
+                        <label id="17">
+                            <text-property name="text">First Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="18">
+                        <label id="19">
+                            <text-property name="text">Office Code</text-property>
+                        </label>
+                    </cell>
+                    <cell id="20">
+                        <label id="21">
+                            <text-property name="text">Reports To</text-property>
+                        </label>
+                    </cell>
+                    <cell id="22">
+                        <label id="23">
+                            <text-property name="text">Job Title</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="24">
+                    <cell id="25">
+                        <data id="26">
+                            <property name="resultSetColumn">employeeNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="27">
+                        <data id="28">
+                            <property name="resultSetColumn">lastName</property>
+                        </data>
+                    </cell>
+                    <cell id="29">
+                        <data id="30">
+                            <property name="resultSetColumn">firstName</property>
+                        </data>
+                    </cell>
+                    <cell id="31">
+                        <data id="32">
+                            <property name="resultSetColumn">officeCode</property>
+                        </data>
+                    </cell>
+                    <cell id="33">
+                        <data id="34">
+                            <property name="resultSetColumn">reportsTo</property>
+                        </data>
+                    </cell>
+                    <cell id="35">
+                        <data id="36">
+                            <property name="resultSetColumn">jobTitle</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="37">
+                    <cell id="38"/>
+                    <cell id="39"/>
+                    <cell id="40"/>
+                    <cell id="41"/>
+                    <cell id="42"/>
+                    <cell id="43"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

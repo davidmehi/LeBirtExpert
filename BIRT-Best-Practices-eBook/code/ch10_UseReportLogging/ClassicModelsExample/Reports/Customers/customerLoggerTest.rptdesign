@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.1.v20090903 Build &lt;2.5.1.v20090917-1447></property>
+    <property name="units">in</property>
+    <method name="initialize"><![CDATA[
+importPackage(Packages.java.util.logging);
+
+var fileHandler = new FileHandler("C:\\eclipse-galileo-birt\\workspace\\.metadata\\birt2.log", true);
+var baseLogger = Logger.getLogger("customerLoggerTest");
+baseLogger.addHandler(fileHandler);
+
+
+baseLogger.info("** Report After Factory - Info");
+//baseLogger.info("** Report After Factory - Info - customerLoggerTest");
+
+
+baseLogger.warning("** Report After Factory - Warning");
+//baseLogger.warning("** Report After Factory - Warning - customerLoggerTest");
+
+
+baseLogger.severe("** Report After Factory - severe");
+//baseLogger.severe("** Report After Factory - severe - customerLoggerTest");
+]]></method>
+    <method name="afterFactory"><![CDATA[
+
+
+
+]]></method>
+    <property name="theme">reportThemes.mainReportTheme</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/dataItems.rptlibrary</property>
+            <property name="namespace">dataItems</property>
+        </structure>
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/reportItems.rptlibrary</property>
+            <property name="namespace">reportItems</property>
+        </structure>
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/reportThemes.rptlibrary</property>
+            <property name="namespace">reportThemes</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="dbClassicModelsExt" id="201"
+ extends="dataItems.dbClassicModelsExt"/>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsCustomerList" id="204">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">customerNumber</property>
+                    <text-property name="displayName">customerNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">customerName</property>
+                    <text-property name="displayName">customerName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">city</property>
+                    <text-property name="displayName">city</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">country</property>
+                    <text-property name="displayName">country</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">creditLimit</property>
+                    <text-property name="displayName">creditLimit</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">customerNumber</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">customerName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">country</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">creditLimit</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">dbClassicModelsExt</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">customerNumber</property>
+                    <property name="nativeName">customerNumber</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">customerName</property>
+                    <property name="nativeName">customerName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">city</property>
+                    <property name="nativeName">city</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">country</property>
+                    <property name="nativeName">country</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">creditLimit</property>
+                    <property name="nativeName">creditLimit</property>
+                    <property name="dataType">float</property>
+                    <property name="nativeDataType">8</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select customers.customerNumber,customers.customerName,customers.city,customers.country,customers.creditLimit
+from customers]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>customerNumber</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>11</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>customerNumber</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>customerNumber</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>customerName</design:name>
+            <design:position>2</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>customerName</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>customerName</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>city</design:name>
+            <design:position>3</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>city</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>city</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>country</design:name>
+            <design:position>4</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>country</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>country</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>creditLimit</design:name>
+            <design:position>5</design:position>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>22</design:precision>
+            <design:scale>31</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>creditLimit</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>creditLimit</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>
+]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <page-setup>
+        <simple-master-page name="mpMainMasterPagePortrait" id="8" extends="reportItems.mpMainMasterPagePortrait">
+            <property name="leftMargin">0.25in</property>
+            <overridden-values>
+                <ref-entry baseId="138" name="grdReportHeaderPortrait" id="138"/>
+                <ref-entry baseId="139" id="139"/>
+                <ref-entry baseId="140" id="140"/>
+                <ref-entry baseId="141" id="141"/>
+                <ref-entry baseId="142" id="142"/>
+                <ref-entry baseId="143" id="143"/>
+                <ref-entry baseId="144" name="imgClassicModelCar1" id="144"/>
+                <ref-entry baseId="145" id="145"/>
+                <ref-entry baseId="146" name="lblReportHeader1" id="146"/>
+                <ref-entry baseId="147" id="147"/>
+                <ref-entry baseId="149" name="imgClassicModelCar21" id="149"/>
+                <ref-entry baseId="182" name="grdReportFooterPortrait" id="182"/>
+                <ref-entry baseId="183" id="183"/>
+                <ref-entry baseId="184" id="184"/>
+                <ref-entry baseId="185" id="185"/>
+                <ref-entry baseId="186" id="186"/>
+                <ref-entry baseId="188" name="txtFooterDate" id="188"/>
+                <ref-entry baseId="187" id="187"/>
+                <ref-entry baseId="190" name="grdReportFooterPageNo" id="190"/>
+                <ref-entry baseId="191" id="191"/>
+                <ref-entry baseId="192" id="192"/>
+                <ref-entry baseId="193" id="193"/>
+                <ref-entry baseId="194" id="194"/>
+                <ref-entry baseId="195" id="195"/>
+                <ref-entry baseId="196" name="txtPageNumber" id="196"/>
+                <ref-entry baseId="197" id="197"/>
+                <ref-entry baseId="198" name="txtPageOf" id="198"/>
+                <ref-entry baseId="199" id="199"/>
+                <ref-entry baseId="200" name="txtTotalPage" id="200"/>
+            </overridden-values>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="205">
+            <property name="dataSet">dsCustomerList</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">customerNumber</property>
+                    <text-property name="displayName">customerNumber</text-property>
+                    <expression name="expression">dataSetRow["customerNumber"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">customerName</property>
+                    <text-property name="displayName">customerName</text-property>
+                    <expression name="expression">dataSetRow["customerName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">city</property>
+                    <text-property name="displayName">city</text-property>
+                    <expression name="expression">dataSetRow["city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">country</property>
+                    <text-property name="displayName">country</text-property>
+                    <expression name="expression">dataSetRow["country"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">creditLimit</property>
+                    <text-property name="displayName">creditLimit</text-property>
+                    <expression name="expression">dataSetRow["creditLimit"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+            </list-property>
+            <column id="234"/>
+            <column id="235"/>
+            <column id="236"/>
+            <column id="237"/>
+            <column id="238"/>
+            <header>
+                <row id="206">
+                    <cell id="207">
+                        <label id="208">
+                            <text-property name="text">customerNumber</text-property>
+                        </label>
+                    </cell>
+                    <cell id="209">
+                        <label id="210">
+                            <text-property name="text">customerName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="211">
+                        <label id="212">
+                            <text-property name="text">city</text-property>
+                        </label>
+                    </cell>
+                    <cell id="213">
+                        <label id="214">
+                            <text-property name="text">country</text-property>
+                        </label>
+                    </cell>
+                    <cell id="215">
+                        <label id="216">
+                            <text-property name="text">creditLimit</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="217">
+                    <cell id="218">
+                        <data id="219">
+                            <property name="resultSetColumn">customerNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="220">
+                        <data id="221">
+                            <property name="resultSetColumn">customerName</property>
+                        </data>
+                    </cell>
+                    <cell id="222">
+                        <data id="223">
+                            <property name="resultSetColumn">city</property>
+                        </data>
+                    </cell>
+                    <cell id="224">
+                        <data id="225">
+                            <property name="resultSetColumn">country</property>
+                        </data>
+                    </cell>
+                    <cell id="226">
+                        <data id="227">
+                            <property name="resultSetColumn">creditLimit</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="228">
+                    <cell id="229"/>
+                    <cell id="230"/>
+                    <cell id="231"/>
+                    <cell id="232"/>
+                    <cell id="233"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

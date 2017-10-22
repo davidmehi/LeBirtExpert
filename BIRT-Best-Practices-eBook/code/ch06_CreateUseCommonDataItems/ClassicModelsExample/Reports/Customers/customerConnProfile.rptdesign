@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.1.v20090903 Build &lt;2.5.1.v20090917-1447></property>
+    <property name="units">in</property>
+    <list-property name="propertyBindings">
+        <structure>
+            <property name="name">OdaConnProfileName</property>
+            <property name="id">9</property>
+        </structure>
+        <structure>
+            <property name="name">OdaConnProfileStorePath</property>
+            <property name="id">9</property>
+        </structure>
+    </list-property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc.dbprofile" name="dbJDBCconnMySQL" id="9">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>org.eclipse.datatools.connectivity.oda.profile.db.provider.id</name>
+                    <value>org.eclipse.datatools.enablement.mysql.connectionProfile</value>
+                </ex-property>
+            </list-property>
+            <property name="OdaConnProfileName">dbJDBCconnMySQL</property>
+            <property name="OdaConnProfileStorePath">C:\LeBirtExpert\BIRT-Best-Practices\connectionProfile\connProfileMySQL</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.dbprofile.sqbDataSet" name="dsCustomerByCountrySQL" id="12">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">customerNumber</property>
+                    <text-property name="displayName">customerNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">customerName</property>
+                    <text-property name="displayName">customerName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contactLastName</property>
+                    <text-property name="displayName">contactLastName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contactFirstName</property>
+                    <text-property name="displayName">contactFirstName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orderNumber</property>
+                    <text-property name="displayName">orderNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orderDate</property>
+                    <text-property name="displayName">orderDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">status</property>
+                    <text-property name="displayName">status</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">customerNumber</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">customerName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">contactLastName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">contactFirstName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">orderNumber</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">orderDate</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">status</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">dbJDBCconnMySQL</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">customerNumber</property>
+                    <property name="nativeName">customerNumber</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">customerName</property>
+                    <property name="nativeName">customerName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">contactLastName</property>
+                    <property name="nativeName">contactLastName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">contactFirstName</property>
+                    <property name="nativeName">contactFirstName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">orderNumber</property>
+                    <property name="nativeName">orderNumber</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">orderDate</property>
+                    <property name="nativeName">orderDate</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">status</property>
+                    <property name="nativeName">status</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT `ClassicModels`.`customers`.`customerNumber`, `ClassicModels`.`customers`.`customerName`,
+  `ClassicModels`.`customers`.`contactLastName`, `ClassicModels`.`customers`.`contactFirstName`,
+  `ClassicModels`.`orders`.`orderNumber`, `ClassicModels`.`orders`.`orderDate`,
+  `ClassicModels`.`orders`.`status`
+  FROM
+       `ClassicModels`.`customers` JOIN `ClassicModels`.`orders` ON `ClassicModels`.`customers`.`customerNumber` = `ClassicModels`.`orders`.`customerNumber`
+]]></xml-property>
+            <structure name="designerState">
+                <property name="version">1.0</property>
+                <property name="stateContentAsString">&lt;?xml version="1.0" encoding="UTF-8"?>&#13;
+&lt;SQLQueryBuilder editorInputType="SQLBuilderStorageEditorInput" name="dsCustomerByCountrySQL" version="1.0">&#13;
+&lt;SQLStatement>SELECT `ClassicModels`.`customers`.`customerNumber`, `ClassicModels`.`customers`.`customerName`,&amp;#x0A;  `ClassicModels`.`customers`.`contactLastName`, `ClassicModels`.`customers`.`contactFirstName`,&amp;#x0A;  `ClassicModels`.`orders`.`orderNumber`, `ClassicModels`.`orders`.`orderDate`,&amp;#x0A;  `ClassicModels`.`orders`.`status`&amp;#x0A;  FROM&amp;#x0A;       `ClassicModels`.`customers` JOIN `ClassicModels`.`orders` ON `ClassicModels`.`customers`.`customerNumber` = `ClassicModels`.`orders`.`customerNumber`&amp;#x0A;&lt;/SQLStatement>&#13;
+&lt;connInfo>MySQL_5.1.0:dbJDBCconnMySQL:ClassicModels:root&lt;/connInfo>&#13;
+&lt;omitSchemaInfo>false:true:&lt;/omitSchemaInfo>&#13;
+&lt;editorInputUsageOptions>useWindowState=true&lt;/editorInputUsageOptions>&#13;
+&lt;windowState height="478" version="1.0" width="687">&#13;
+&lt;control height="145" isHideable="true" isVisible="true" name="SQLSourceViewer" width="660"/>&#13;
+&lt;control height="150" isHideable="true" isVisible="true" name="DesignViewer" width="673"/>&#13;
+&lt;control height="145" isHideable="true" isVisible="true" name="GraphControl" width="665"/>&#13;
+&lt;control height="149" isHideable="true" isVisible="false" name="OutlineViewer" width="198"/>&#13;
+&lt;/windowState>&#13;
+&lt;/SQLQueryBuilder></property>
+            </structure>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>customerNumber</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>11</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>customerNumber</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>customerNumber</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>customerName</design:name>
+            <design:position>2</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>customerName</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>customerName</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>contactLastName</design:name>
+            <design:position>3</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>contactLastName</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>contactLastName</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>contactFirstName</design:name>
+            <design:position>4</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>contactFirstName</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>contactFirstName</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>orderNumber</design:name>
+            <design:position>5</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>11</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>orderNumber</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>orderNumber</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>orderDate</design:name>
+            <design:position>6</design:position>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>19</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>orderDate</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>orderDate</design:label>
+            <design:formattingHints>
+              <design:displaySize>19</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>status</design:name>
+            <design:position>7</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>15</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>status</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>status</design:label>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria>
+        <design:rowOrdering/>
+      </design:criteria>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+</report>

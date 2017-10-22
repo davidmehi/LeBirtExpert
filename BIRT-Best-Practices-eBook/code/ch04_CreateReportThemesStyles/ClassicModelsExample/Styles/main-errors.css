@@ -1,0 +1,51 @@
+
+.lblReportHeader16Bold {
+	font-size:16pt;
+	font-weight: bold; 
+	color: Navy
+}
+
+.lblReportHeader16BoldNavy {
+	font-size:16pt;
+	font-weight: bold; 
+	color: Navy
+}
+
+.tblHeaderRowBGColorDarkBlue {
+	background-color: #333333;
+}
+
+.tblDetailRowBGColorLightBlue {
+	background-color: #333333;
+}
+
+ul
+{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+li
+{
+	background-image: url(sqpurple.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 14px;
+}
+
+table
+{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+tr
+{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#h1#chapter1 { text-align: center }
+

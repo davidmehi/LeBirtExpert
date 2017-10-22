@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.1.v20090903 Build &lt;2.5.1.v20090917-1447></property>
+    <property name="units">in</property>
+    <property name="comments">BIRT Library that contains all of the re-usable report items for the reporting project.</property>
+    <html-property name="description">*****************************************************************&#13;
+**  This Report File is part of the Classic Models example       **&#13;
+**  provided with the eBook:                                                        **&#13;
+**  Le BIRT Expert's Guide to BIRT Best Practices                       **&#13;
+**                                                                                                      **&#13;
+**  Visit http://www.lebirtexpert.com for more information   **&#13;
+**                                                                                                      **&#13;
+*****************************************************************</html-property>
+    <property name="theme">reportThemes.mainReportTheme</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/reportThemes.rptlibrary</property>
+            <property name="namespace">reportThemes</property>
+        </structure>
+    </list-property>
+    <components>
+        <grid name="grdMasterPageHeader" id="118">
+            <property name="borderBottomColor">#000000</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">thin</property>
+            <property name="marginBottom">10pt</property>
+            <property name="width">100%</property>
+            <column id="119">
+                <property name="width">1.6145833333333333in</property>
+            </column>
+            <column id="120">
+                <property name="width">4.739583333333333in</property>
+            </column>
+            <column id="121">
+                <property name="width">1.4895833333333333in</property>
+            </column>
+            <row id="126">
+                <cell id="127">
+                    <property name="textAlign">center</property>
+                    <property name="verticalAlign">middle</property>
+                    <image name="imgClassicModelCar" id="135">
+                        <property name="display">block</property>
+                        <property name="height">45px</property>
+                        <property name="width">85px</property>
+                        <property name="source">file</property>
+                        <expression name="uri" type="constant">ClassicModelsExample/Images/ClassicCar.jpg</expression>
+                    </image>
+                </cell>
+                <cell id="128">
+                    <property name="textAlign">center</property>
+                    <property name="verticalAlign">middle</property>
+                    <label name="lblMasterPageHeader" id="134">
+                        <property name="style">lblReportHeader14Bold</property>
+                        <text-property name="text">Classic Model Cars Inc</text-property>
+                    </label>
+                    <label name="lblMasterPageHeader2" id="268">
+                        <property name="style">lblReportHeader12Bold</property>
+                        <text-property name="text">Detroit, MI</text-property>
+                    </label>
+                </cell>
+                <cell id="129">
+                    <property name="textAlign">center</property>
+                    <property name="verticalAlign">middle</property>
+                    <image name="imgClassicModelCar2" id="148">
+                        <property name="height">55px</property>
+                        <property name="width">70px</property>
+                        <property name="source">file</property>
+                        <expression name="uri" type="constant">ClassicModelsExample/Images/ClassicCar2.jpg</expression>
+                    </image>
+                </cell>
+            </row>
+        </grid>
+        <label name="lblReportHeaderCommon" id="243">
+            <property name="style">lblTableHeader14BoldItalic</property>
+            <text-property name="text">Classic Model Cars Inc</text-property>
+        </label>
+        <image name="imgClassicCarRed" id="230">
+            <property name="height">130px</property>
+            <property name="width">222px</property>
+            <property name="source">file</property>
+            <expression name="uri" type="constant">ClassicModelsExample/Images/ClassicCar.jpg</expression>
+        </image>
+        <image name="imgClassicCarBlack" id="266">
+            <property name="height">172px</property>
+            <property name="width">212px</property>
+            <property name="source">file</property>
+            <expression name="uri" type="constant">ClassicModelsExample/Images/ClassicCar2.jpg</expression>
+        </image>
+        <grid name="grdReportHeaderNavy" id="271">
+            <property name="marginBottom">10pt</property>
+            <property name="width">100%</property>
+            <column id="272"/>
+            <row id="273">
+                <cell id="274">
+                    <label name="lblReportHeaderNavy" id="275">
+                        <property name="style">lblReportHeader14BoldNavy</property>
+                    </label>
+                </cell>
+            </row>
+        </grid>
+        <grid name="grdReportHeaderDataNavy" id="276">
+            <property name="marginBottom">10pt</property>
+            <property name="width">100%</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">dataReportHeaderNavy</property>
+                    <text-property name="displayName">dataReportHeaderNavy</text-property>
+                    <expression name="expression" type="javascript">""</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="277"/>
+            <row id="278">
+                <cell id="279">
+                    <data name="NewData" id="281">
+                        <property name="style">lblReportHeader14BoldNavy</property>
+                        <property name="resultSetColumn">dataReportHeaderNavy</property>
+                    </data>
+                </cell>
+            </row>
+        </grid>
+        <label name="lblTableHeader10Bold" id="282">
+            <property name="style">lblTableHeader10Bold</property>
+        </label>
+        <data name="dataItemDetail10" id="283">
+            <property name="style">dataItem10</property>
+            <property name="textAlign">left</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">dsField</property>
+                    <text-property name="displayName">dataItem</text-property>
+                    <expression name="expression" type="javascript">""</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="resultSetColumn">dsField</property>
+        </data>
+        <data name="dataItemDetail10Date" id="284">
+            <property name="style">dataItem10Date</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">dsField</property>
+                    <text-property name="displayName">dataItem</text-property>
+                    <expression name="expression" type="javascript">""</expression>
+                    <property name="dataType">date</property>
+                </structure>
+            </list-property>
+            <property name="resultSetColumn">dsField</property>
+        </data>
+    </components>
+    <page-setup>
+        <simple-master-page name="mpMainMasterPagePortrait" id="3">
+            <property name="type">us-letter</property>
+            <property name="orientation">auto</property>
+            <property name="leftMargin">0.25in</property>
+            <page-header>
+                <grid name="grdReportHeaderPortrait" id="138" extends="grdMasterPageHeader">
+                    <overridden-values>
+                        <ref-entry baseId="119" id="139"/>
+                        <ref-entry baseId="120" id="140"/>
+                        <ref-entry baseId="121" id="141"/>
+                        <ref-entry baseId="126" id="142"/>
+                        <ref-entry baseId="127" id="143"/>
+                        <ref-entry baseId="135" name="imgClassicModelCar1" id="144"/>
+                        <ref-entry baseId="128" id="145"/>
+                        <ref-entry baseId="134" name="lblReportHeader1" id="146">
+                            <property name="style">lblReportHeader14Bold</property>
+                        </ref-entry>
+                        <ref-entry baseId="268" name="NewLabel1" id="269"/>
+                        <ref-entry baseId="129" id="147"/>
+                        <ref-entry baseId="148" name="imgClassicModelCar21" id="149"/>
+                    </overridden-values>
+                </grid>
+            </page-header>
+            <page-footer>
+                <grid name="grdReportFooterPortrait" id="182">
+                    <column id="183">
+                        <property name="width">6.125in</property>
+                    </column>
+                    <column id="184">
+                        <property name="width">1.71875in</property>
+                    </column>
+                    <row id="185">
+                        <cell id="186">
+                            <property name="textAlign">left</property>
+                            <property name="verticalAlign">middle</property>
+                            <text name="txtFooterDate" id="188">
+                                <property name="style">dataItem10</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                            </text>
+                        </cell>
+                        <cell id="187">
+                            <property name="textAlign">right</property>
+                            <property name="verticalAlign">middle</property>
+                            <grid name="grdReportFooterPageNo" id="190">
+                                <column id="191">
+                                    <property name="width">1.0416666666666667in</property>
+                                </column>
+                                <column id="192">
+                                    <property name="width">0.20833333333333334in</property>
+                                </column>
+                                <column id="193">
+                                    <property name="width">0.40625in</property>
+                                </column>
+                                <row id="194">
+                                    <cell id="195">
+                                        <auto-text name="txtPageNumber" id="196">
+                                            <property name="style">dataItem10</property>
+                                            <property name="type">page-number</property>
+                                        </auto-text>
+                                    </cell>
+                                    <cell id="197">
+                                        <text name="txtPageOf" id="198">
+                                            <property name="style">dataItem10</property>
+                                            <property name="contentType">plain</property>
+                                            <text-property name="content"><![CDATA[/]]></text-property>
+                                        </text>
+                                    </cell>
+                                    <cell id="199">
+                                        <auto-text name="txtTotalPage" id="200">
+                                            <property name="style">dataItem10</property>
+                                            <property name="type">total-page</property>
+                                        </auto-text>
+                                    </cell>
+                                </row>
+                            </grid>
+                        </cell>
+                    </row>
+                </grid>
+            </page-footer>
+        </simple-master-page>
+        <simple-master-page name="mpMainMasterPageLandscape" id="137">
+            <property name="orientation">landscape</property>
+            <page-header>
+                <grid name="grdReportHeaderLandscape" id="201" extends="grdMasterPageHeader">
+                    <overridden-values>
+                        <ref-entry baseId="119" id="202"/>
+                        <ref-entry baseId="120" id="203"/>
+                        <ref-entry baseId="121" id="204"/>
+                        <ref-entry baseId="126" id="205"/>
+                        <ref-entry baseId="127" id="206"/>
+                        <ref-entry baseId="135" name="imgClassicModelCar3" id="207"/>
+                        <ref-entry baseId="128" id="208"/>
+                        <ref-entry baseId="134" name="lblReportHeader2" id="209"/>
+                        <ref-entry baseId="268" name="NewLabel2" id="270"/>
+                        <ref-entry baseId="129" id="210"/>
+                        <ref-entry baseId="148" name="imgClassicModelCar22" id="211"/>
+                    </overridden-values>
+                </grid>
+            </page-header>
+            <page-footer>
+                <grid name="grdReportFooterLandscape" id="212">
+                    <column id="213">
+                        <property name="width">5.166666666666667in</property>
+                    </column>
+                    <column id="214">
+                        <property name="width">5.177083333333333in</property>
+                    </column>
+                    <row id="215">
+                        <cell id="216">
+                            <property name="textAlign">left</property>
+                            <property name="verticalAlign">middle</property>
+                            <text name="txtFooterDate1" id="217">
+                                <property name="style">dataItem10</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                            </text>
+                        </cell>
+                        <cell id="218">
+                            <property name="textAlign">right</property>
+                            <property name="verticalAlign">middle</property>
+                            <grid name="grdReportFooterPageNo1" id="219">
+                                <column id="220">
+                                    <property name="width">4.5in</property>
+                                </column>
+                                <column id="221">
+                                    <property name="width">0.20833333333333334in</property>
+                                </column>
+                                <column id="222">
+                                    <property name="width">0.40625in</property>
+                                </column>
+                                <row id="223">
+                                    <cell id="224">
+                                        <auto-text name="txtPageNumber1" id="225">
+                                            <property name="style">dataItem10</property>
+                                            <property name="type">page-number</property>
+                                        </auto-text>
+                                    </cell>
+                                    <cell id="226">
+                                        <text name="txtPageOf1" id="227">
+                                            <property name="style">dataItem10</property>
+                                            <property name="contentType">plain</property>
+                                            <text-property name="content"><![CDATA[/]]></text-property>
+                                        </text>
+                                    </cell>
+                                    <cell id="228">
+                                        <auto-text name="txtTotalPage1" id="229">
+                                            <property name="style">dataItem10</property>
+                                            <property name="type">total-page</property>
+                                        </auto-text>
+                                    </cell>
+                                </row>
+                            </grid>
+                        </cell>
+                    </row>
+                </grid>
+            </page-footer>
+        </simple-master-page>
+        <simple-master-page name="mpMainMasterPageWeb" id="267"/>
+        <simple-master-page name="mpMainMasterPagePortraitA4" id="286">
+            <property name="type">a4</property>
+            <property name="orientation">portrait</property>
+            <page-header>
+                <grid name="grdReportHeaderPortrait1" id="305" extends="grdMasterPageHeader">
+                    <overridden-values>
+                        <ref-entry baseId="119" id="306"/>
+                        <ref-entry baseId="120" id="307"/>
+                        <ref-entry baseId="121" id="308"/>
+                        <ref-entry baseId="126" id="309"/>
+                        <ref-entry baseId="127" id="310"/>
+                        <ref-entry baseId="135" name="imgClassicModelCar11" id="311"/>
+                        <ref-entry baseId="128" id="312"/>
+                        <ref-entry baseId="134" name="lblReportHeader11" id="313">
+                            <property name="style">lblReportHeader14Bold</property>
+                        </ref-entry>
+                        <ref-entry baseId="268" name="NewLabel11" id="314"/>
+                        <ref-entry baseId="129" id="315"/>
+                        <ref-entry baseId="148" name="imgClassicModelCar211" id="316"/>
+                    </overridden-values>
+                </grid>
+            </page-header>
+            <page-footer>
+                <grid name="grdReportFooterPortrait1" id="287">
+                    <column id="288">
+                        <property name="width">6.125in</property>
+                    </column>
+                    <column id="289">
+                        <property name="width">1.71875in</property>
+                    </column>
+                    <row id="290">
+                        <cell id="291">
+                            <property name="textAlign">left</property>
+                            <property name="verticalAlign">middle</property>
+                            <text name="txtFooterDate2" id="292">
+                                <property name="style">dataItem10</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                            </text>
+                        </cell>
+                        <cell id="293">
+                            <property name="textAlign">right</property>
+                            <property name="verticalAlign">middle</property>
+                            <grid name="grdReportFooterPageNo2" id="294">
+                                <column id="295">
+                                    <property name="width">1.0416666666666667in</property>
+                                </column>
+                                <column id="296">
+                                    <property name="width">0.20833333333333334in</property>
+                                </column>
+                                <column id="297">
+                                    <property name="width">0.4270833333333333in</property>
+                                </column>
+                                <row id="298">
+                                    <cell id="299">
+                                        <auto-text name="txtPageNumber2" id="300">
+                                            <property name="style">dataItem10</property>
+                                            <property name="type">page-number</property>
+                                        </auto-text>
+                                    </cell>
+                                    <cell id="301">
+                                        <text name="txtPageOf2" id="302">
+                                            <property name="style">dataItem10</property>
+                                            <property name="contentType">plain</property>
+                                            <text-property name="content"><![CDATA[/]]></text-property>
+                                        </text>
+                                    </cell>
+                                    <cell id="303">
+                                        <auto-text name="txtTotalPage2" id="304">
+                                            <property name="style">dataItem10</property>
+                                            <property name="type">total-page</property>
+                                        </auto-text>
+                                    </cell>
+                                </row>
+                            </grid>
+                        </cell>
+                    </row>
+                </grid>
+            </page-footer>
+        </simple-master-page>
+        <simple-master-page name="mpMainMasterPageLandscapeA4" id="317">
+            <property name="type">a4</property>
+            <property name="orientation">landscape</property>
+            <page-header>
+                <grid name="grdReportHeaderLandscape1" id="318" extends="grdMasterPageHeader">
+                    <overridden-values>
+                        <ref-entry baseId="119" id="319"/>
+                        <ref-entry baseId="120" id="320"/>
+                        <ref-entry baseId="121" id="321"/>
+                        <ref-entry baseId="126" id="322"/>
+                        <ref-entry baseId="127" id="323"/>
+                        <ref-entry baseId="135" name="imgClassicModelCar31" id="324"/>
+                        <ref-entry baseId="128" id="325"/>
+                        <ref-entry baseId="134" name="lblReportHeader21" id="326"/>
+                        <ref-entry baseId="268" name="NewLabel21" id="327"/>
+                        <ref-entry baseId="129" id="328"/>
+                        <ref-entry baseId="148" name="imgClassicModelCar221" id="329"/>
+                    </overridden-values>
+                </grid>
+            </page-header>
+            <page-footer>
+                <grid name="grdReportFooterLandscape1" id="330">
+                    <column id="331">
+                        <property name="width">5.166666666666667in</property>
+                    </column>
+                    <column id="332">
+                        <property name="width">5.177083333333333in</property>
+                    </column>
+                    <row id="333">
+                        <cell id="334">
+                            <property name="textAlign">left</property>
+                            <property name="verticalAlign">middle</property>
+                            <text name="txtFooterDate11" id="335">
+                                <property name="style">dataItem10</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                            </text>
+                        </cell>
+                        <cell id="336">
+                            <property name="textAlign">right</property>
+                            <property name="verticalAlign">middle</property>
+                            <grid name="grdReportFooterPageNo11" id="337">
+                                <column id="338">
+                                    <property name="width">4.5in</property>
+                                </column>
+                                <column id="339">
+                                    <property name="width">0.20833333333333334in</property>
+                                </column>
+                                <column id="340">
+                                    <property name="width">0.40625in</property>
+                                </column>
+                                <row id="341">
+                                    <cell id="342">
+                                        <auto-text name="txtPageNumber11" id="343">
+                                            <property name="style">dataItem10</property>
+                                            <property name="type">page-number</property>
+                                        </auto-text>
+                                    </cell>
+                                    <cell id="344">
+                                        <text name="txtPageOf11" id="345">
+                                            <property name="style">dataItem10</property>
+                                            <property name="contentType">plain</property>
+                                            <text-property name="content"><![CDATA[/]]></text-property>
+                                        </text>
+                                    </cell>
+                                    <cell id="346">
+                                        <auto-text name="txtTotalPage11" id="347">
+                                            <property name="style">dataItem10</property>
+                                            <property name="type">total-page</property>
+                                        </auto-text>
+                                    </cell>
+                                </row>
+                            </grid>
+                        </cell>
+                    </row>
+                </grid>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+</library>

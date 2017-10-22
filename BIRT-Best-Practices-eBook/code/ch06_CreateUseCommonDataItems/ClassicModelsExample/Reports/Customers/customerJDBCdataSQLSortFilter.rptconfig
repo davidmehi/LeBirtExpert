@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__pCountryName_8_0</property>
+            <property name="value">USA</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__pCityName_66_1</property>
+            <property name="value">NYC</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__pSortField_67_2</property>
+            <property name="value">Credit Limit</property>
+        </structure>
+        <structure>
+            <property name="name">pSortField_67_3</property>
+            <property name="value">CreditLimit</property>
+        </structure>
+        <structure>
+            <property name="name">pSortField_67_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">pCountryName_8_4</property>
+            <property name="value">USA</property>
+        </structure>
+        <structure>
+            <property name="name">pCountryName_8_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">pCityName_66_5</property>
+            <property name="value">NYC</property>
+        </structure>
+        <structure>
+            <property name="name">pCityName_66_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>

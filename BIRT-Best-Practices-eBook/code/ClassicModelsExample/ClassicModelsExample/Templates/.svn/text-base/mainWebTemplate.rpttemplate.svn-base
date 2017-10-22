@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.1.v20090903 Build &lt;2.5.1.v20090917-1447></property>
+    <property name="units">in</property>
+    <property name="comments">Main Web Template</property>
+    <html-property name="description">*****************************************************************&#13;
+**  This Report file is part of the Classic Models example        **&#13;
+**  provided with the eBook:                                                        **&#13;
+**  Le BIRT Expert's Guide to BIRT Best Practices                       **&#13;
+**                                                                                                      **&#13;
+**  Visit http://www.lebirtexpert.com for more information   **&#13;
+**                                                                                                      **&#13;
+*****************************************************************</html-property>
+    <method name="initialize"><![CDATA[
+// Set Start time of Report
+setStartTime();
+]]></method>
+    <method name="afterFactory"><![CDATA[
+// Set End Time
+setEndTime();
+
+]]></method>
+    <property name="theme">reportThemes.mainReportTheme</property>
+    <text-property name="displayName">Main Web Template</text-property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/dataItems.rptlibrary</property>
+            <property name="namespace">dataItems</property>
+        </structure>
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/reportItems.rptlibrary</property>
+            <property name="namespace">reportItems</property>
+        </structure>
+        <structure>
+            <property name="fileName">ClassicModelsExample/Libraries/reportThemes.rptlibrary</property>
+            <property name="namespace">reportThemes</property>
+        </structure>
+    </list-property>
+    <list-property name="includeScripts">
+        <property>ClassicModelsExample/Scripts/common.js</property>
+        <property>ClassicModelsExample/Scripts/logger.js</property>
+    </list-property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="dbClassicModels" id="7"
+ extends="dataItems.dbClassicModels"/>
+    </data-sources>
+    <page-setup>
+        <simple-master-page name="mpMainMasterPageWeb" id="201" extends="reportItems.mpMainMasterPageWeb"/>
+    </page-setup>
+</report>
